@@ -1,2 +1,15 @@
 # bonanzaskate
-Skateboard application to learn new tricks and have fun with your friends
+
+Skateboard application to learn new tricks and have fun with your friends!
+
+## About
+
+---
+
+## Contributors
+
+---
+
+## Licence
+
+---
