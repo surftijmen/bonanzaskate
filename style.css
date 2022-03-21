@@ -41,17 +41,15 @@ body {
     height: 192px;
     pointer-events: none;
     transform-origin:0 0;
-    
+    animation-name: thropy;
+    animation-duration: 2s ;
 
 }
-
 
 .icons div .overlayImage:hover {
     filter: brightness(130%);
     transform:  skewX(-30deg) rotate(-60deg) translate(0, 0%);
 }
-
-
 
 .icons > div:nth-child(2){
     transform: rotate(60deg) 
@@ -69,4 +67,14 @@ body {
     transform: rotate(-60deg) 
 }
 
-
+@keyframes thropy{
+    0%{
+        opacity: 0%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
