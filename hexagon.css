@@ -68,13 +68,7 @@
     outline-width: 54px;
 }
 
-.t div .triangle:hover, .t div .triangle:active {
-    filter: brightness(130%);
-    border-radius: 5px;
-    transform:  skewX(-30deg) rotate(-60deg) translate(0, 15%);
-    -webkit-transform:  skewX(-30deg) rotate(-60deg) translate(0, 15%);
-    -moz-transform:  skewX(-30deg) rotate(-60deg) translate(0, 15%);
-}
+
 
 .t > div:nth-child(1){
     -ms-transform: skewX(30deg);
@@ -105,6 +99,14 @@
     -ms-transform: rotate(-180deg) skewX(30deg);
     -webkit-transform: rotate(-180deg) skewX(30deg);
     transform: rotate(-180deg) skewX(30deg);
+}
+
+.t div .triangle:hover, .t div .triangle:active {
+    filter: brightness(130%);
+    border-radius: 5px;
+    transform:  skewX(-30deg) rotate(-60deg) translate(0, 15%);
+    -webkit-transform:  skewX(-30deg) rotate(-60deg) translate(0, 15%);
+    -moz-transform:  skewX(-30deg) rotate(-60deg) translate(0, 15%);
 }
 
 @keyframes triangle{
