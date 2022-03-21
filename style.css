@@ -23,7 +23,64 @@ body {
     width: 50%;
 }
 
-.overlayImage {
+.icons div .overlayImage {
     position: absolute;
+
+    width: 100px;
+    height: 100px;
+    opacity: 30%;
+    top: 25%;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    cursor:pointer;    
+    transform: skewX(0deg) rotate(0deg) translate(0, 5%);
+
+    transform-origin:0 0;
+    -ms-transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+
+}
+
+.icons > div {
+    position:absolute;
+    top:50%;
+    left:50%;
+    width: 222px;
+    height: 192px;
+        
+    transform-origin:0 0;
+    
+    transform: skewX(30deg)  translate(0, 5%);
+}
+
+
+.icons div .overlayImage:hover {
+    filter: brightness(130%);
+    transform:  skewX(-30deg) rotate(-60deg) translate(0, 0%);
+}
+
+
+.icons > div:nth-child(1){
+    transform: rotate(50deg) skewX(0deg);
+}
+.icons > div:nth-child(2){
+    transform: rotate(130deg) skewX(0deg);
+}
+.icons > div:nth-child(3){
+    transform: rotate(-130deg) skewX(0deg);
+}
+.icons > div:nth-child(4){
+    transform: rotate(-40deg) skewX(0deg);
+}
+.icons > div:nth-child(5){
+    transform: rotate(-100deg) skewX(0deg);
+}
+.icons > div:nth-child(6){
+    transform: rotate(-160deg) skewX(0deg);
+}
+
+.a{
+    transform: rotate(-50deg) skewX(0deg);
 }
 

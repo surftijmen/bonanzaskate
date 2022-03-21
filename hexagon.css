@@ -68,12 +68,12 @@
     outline-width: 54px;
 }
 
-.t div .triangle:hover, .t div .triangle:hover {
-    filter: brightness(120%);
+.t div .triangle:hover, .t div .triangle:active {
+    filter: brightness(130%);
     border-radius: 5px;
-    transform:  skewX(-30deg) rotate(-60deg) translate(0, 10%);
-    -webkit-transform:  skewX(-30deg) rotate(-60deg) translate(0, 10%);
-    -moz-transform:  skewX(-30deg) rotate(-60deg) translate(0, 10%);
+    transform:  skewX(-30deg) rotate(-60deg) translate(0, 15%);
+    -webkit-transform:  skewX(-30deg) rotate(-60deg) translate(0, 15%);
+    -moz-transform:  skewX(-30deg) rotate(-60deg) translate(0, 15%);
 }
 
 .t > div:nth-child(1){
