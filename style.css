@@ -23,58 +23,5 @@ body {
     width: 50%;
 }
 
-.icons div .overlayImage {
-    position:absolute;
-    top:40%;
-    left: -50px;
-    width: 100px;
-    height: 100px;
-    opacity: 30%;
-    pointer-events: none;
-}
 
-.icons > div {
-    position:absolute;
-    top:50%;
-    left:50%;
-    width: 222px;
-    height: 192px;
-    pointer-events: none;
-    transform-origin:0 0;
-    animation-name: thropy;
-    animation-duration: 2s ;
 
-}
-
-.icons div .overlayImage:hover {
-    filter: brightness(130%);
-    transform:  skewX(-30deg) rotate(-60deg) translate(0, 0%);
-}
-
-.icons > div:nth-child(2){
-    transform: rotate(60deg) 
-}
-.icons > div:nth-child(3){
-    transform: rotate(120deg) 
-}
-.icons > div:nth-child(4){
-    transform: rotate(180deg) 
-}
-.icons > div:nth-child(5){
-    transform: rotate(-120deg) 
-}
-.icons > div:nth-child(6){
-    transform: rotate(-60deg) 
-}
-
-@keyframes thropy{
-    0%{
-        opacity: 0%;
-    }
-    50% {
-        opacity: 0%;
-    }
-    100%{
-        opacity: 100%;
-    }
-}

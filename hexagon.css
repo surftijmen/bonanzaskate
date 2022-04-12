@@ -108,6 +108,30 @@
     -moz-transform:  skewX(-30deg) rotate(-60deg) translate(0, 15%);
 }
 
+.triangle :nth-child(1){
+    position:absolute;
+    pointer-events: none;
+    top:60%;
+    right: -50%;
+    width: 100px;
+    height: 100px;
+    opacity: 70%;
+    animation-name: thropy;
+    animation-duration: 2s ;
+}
+
+@keyframes thropy{
+    0%{
+        opacity: 0%;
+    }
+    50% {
+        opacity: 0%;
+    }
+    100%{
+        opacity: 70%;
+    }
+}
+
 @keyframes triangle{
     0% {
         transform-origin:40 30;
