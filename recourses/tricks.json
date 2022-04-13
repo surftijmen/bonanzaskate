@@ -2,18 +2,31 @@
     [
         {
             "name" : "kickflip",
-            "points" : 1,
+            "points" : 2,
             "catagory" : "flip",
             "image" : "https://t3.ftcdn.net/jpg/02/13/81/42/360_F_213814265_jyP70sW45y9oBFBPRNxaFMEsVP7eyeNX.jpg",            
             "video" : ""
         },
         {
             "name" : "720 flip",
-            "points" : 2,
+            "points" : 3,
             "catagory" : "flip",
             "image" : "https://i.ytimg.com/vi/vBl7S8kyjbs/maxresdefault.jpg",
             "video" : ""
-
+        },
+        {
+            "name" : "heelflip",
+            "points" : 2,
+            "catagory" : "flip",
+            "image" : "https://www.liveabout.com/thmb/YrGHzZXuuBvnAYqfU_Z-CXDy8sw=/1885x1414/smart/filters:no_upscale()/GettyImages-477783598-d0170ec7788c4c07b14df9bae670c3f5.jpg",
+            "video" : ""
+        },
+        {
+            "name" : "shovit",
+            "points" : 1,
+            "catagory" : "flip",
+            "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
+            "video" : ""
         }
     ]
 }

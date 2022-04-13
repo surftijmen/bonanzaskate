@@ -115,7 +115,7 @@
     right: -50%;
     width: 100px;
     height: 100px;
-    opacity: 70%;
+    opacity: 50%;
     animation-name: thropy;
     animation-duration: 2s ;
 }
@@ -128,7 +128,7 @@
         opacity: 0%;
     }
     100%{
-        opacity: 70%;
+        opacity: 50%;
     }
 }
 
