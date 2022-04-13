@@ -2,14 +2,18 @@
     [
         {
             "name" : "kickflip",
-            "difficulty" : 2,
-            "video" : "http://37.media.tumblr.com/acf215fd73a6b2c7ffc3cb1ec0d2d456/tumblr_n3x0bvU51w1rq31wzo1_400.gif"
-            },
-    
+            "points" : 1,
+            "catagory" : "flip",
+            "image" : "https://t3.ftcdn.net/jpg/02/13/81/42/360_F_213814265_jyP70sW45y9oBFBPRNxaFMEsVP7eyeNX.jpg",            
+            "video" : ""
+        },
         {
             "name" : "720 flip",
-            "difficulty" : 4,
-            "video" : "http://i.imgur.com/3614iDE.gif"
+            "points" : 2,
+            "catagory" : "flip",
+            "image" : "https://i.ytimg.com/vi/vBl7S8kyjbs/maxresdefault.jpg",
+            "video" : ""
+
         }
     ]
 }
