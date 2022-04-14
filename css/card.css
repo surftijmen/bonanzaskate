@@ -1,15 +1,48 @@
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 40%;
-    align-self: center;
-    margin-right: auto;
+    width: 25vw;
+    display: block;
+    padding: 5px;
+    border-radius: 10px;
+    height: 60vh;
+}
 
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
   
 .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgb(37, 37, 37);
 }
   
 .container {
     padding: 2px 16px;
+}
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+  }
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+}
+
+@media screen and (orientation:portrait) { 
+    body{
+        background-color: rebeccapurple;
+    }
 }

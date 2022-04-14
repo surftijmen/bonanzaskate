@@ -1,4 +1,7 @@
-h1 {
+h4 {
     text-align: center;
     color: white;
+    font-family: 'Courier New', monospace;
+    text-shadow: 4px 5px 5px #0007;
+    font-size: 20px;
 }
