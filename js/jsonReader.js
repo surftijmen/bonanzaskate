@@ -21,17 +21,14 @@ fetch("recourses/tricks.json")
         image.src = trick.image;
 
         let color = "rgb(87, 148, 124)";
-        let points = "Points: 1";
 
         if (trick.points == 2) {
             color = "rgb(173, 156, 109)";
-            points = "Points: 2";
         } else if (trick.points == 3) {
             color = "rgb(143, 107, 126)";
-            points = "Points: 3";
         }
 
-        document.getElementById("points"+i).innerText = points;
+        document.getElementById("points"+i).innerText = trick.points;
 
         let h = document.getElementById("card"+i).parentElement;
         h.style.backgroundColor = color;

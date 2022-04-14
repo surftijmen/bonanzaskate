@@ -64,7 +64,6 @@
 
 .t div:nth-child(6) .triangle {
     border-color: transparent transparent #71eee4 transparent;
-    outline-width: 54px;
 }
 
 
@@ -140,10 +139,12 @@
         -ms-transform: skewX(-30deg) rotate(-60deg);
         -webkit-transform: skewX(-30deg) rotate(-60deg);
         transform: skew(-30deg) rotate(-60deg) translate(0, 100%);
+
     }
     100% {  
         -ms-transform: skewX(-30deg) rotate(-60deg);
         -webkit-transform: skewX(-30deg) rotate(-60deg);
         transform: skewX(-30deg) rotate(-60deg) translate(0, 5%);
+
     }
 }

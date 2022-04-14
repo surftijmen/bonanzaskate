@@ -2,9 +2,10 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width: 25vw;
     display: block;
-    padding: 5px;
     border-radius: 10px;
     height: 60vh;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
 /* Remove extra left and right margins, due to padding */
@@ -17,8 +18,10 @@
   clear: both;
 }
   
-.card:hover {
+.card:active {
     box-shadow: 0 8px 16px 0 rgb(37, 37, 37);
+    transform: rotateY(180deg);
+
 }
   
 .container {
@@ -42,7 +45,18 @@
 }
 
 @media screen and (orientation:portrait) { 
-    body{
-        background-color: rebeccapurple;
-    }
+    body::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200vw;
+        height: 200vh;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        content: "⟳ Rotate your screen! ⟳";
+        background-color: black;
+        z-index: 100;
+      }
 }

@@ -3,5 +3,13 @@ h4 {
     color: white;
     font-family: 'Courier New', monospace;
     text-shadow: 4px 5px 5px #0007;
-    font-size: 20px;
+    font-size: 3vw;
+}
+
+p {
+    text-align: center;
+    color: beige;
+    font-family: 'Courier New', monospace, bold;
+    text-shadow: 4px 5px 5px #0007;
+    font-size: 5vw;
 }
