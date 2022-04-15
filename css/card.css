@@ -2,11 +2,11 @@
   box-shadow: 10px 4px 10px rgba(28, 28, 28, 0.5);
   border-radius: 16px;
   transition: transform 0.5s;
-  height: 40vh;
-  width: 40vw;
+  height: 20vh;
+  width: 80vw;
   position: relative;
   overflow: hidden;
-  margin: 4vh 4vw; 
+  margin: 2vh 8vw;
   float:left;
 }
 
@@ -23,7 +23,7 @@ p {
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 30vw;
   text-align: left;
-  margin-top: -55vh;
+  margin-top: -20%;
 
 }
 
