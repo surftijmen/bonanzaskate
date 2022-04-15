@@ -13,3 +13,9 @@ p {
     text-shadow: 4px 5px 5px #0007;
     font-size: 5vw;
 }
+
+h5 {
+    text-align: center;
+    text-shadow: 4px 5px 5px #0007;
+    color: cornsilk;
+}
