@@ -2,7 +2,7 @@ fetch("../recourses/tricks.json")
 .then(response => response.json())
 .then(data => {
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < 4; i++) {
 
         let tricks = [];
 
@@ -26,6 +26,8 @@ fetch("../recourses/tricks.json")
             color = "rgb(173, 156, 109)";
         } else if (trick.points == 3) {
             color = "rgb(143, 107, 126)";
+        }  else if (trick.points == 4) {
+            color = "rgb(108, 132, 171)";
         }
 
         document.getElementById("points"+i).innerText = trick.points;
