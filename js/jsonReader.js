@@ -20,20 +20,7 @@ fetch("../recourses/tricks.json")
         // let image = document.getElementById("image"+i);
         // image.src = trick.image;
 
-        let color = "rgb(87, 148, 124)";
-
-        if (trick.points == 2) {
-            color = "rgb(173, 156, 109)";
-        } else if (trick.points == 3) {
-            color = "rgb(143, 107, 126)";
-        }  else if (trick.points == 4) {
-            color = "rgb(108, 132, 171)";
-        }
-
         document.getElementById("points"+i).innerText = trick.points;
-
-        let h = document.getElementById("card"+i).parentElement;
-        h.style.backgroundColor = color;
     }
 })    
 
