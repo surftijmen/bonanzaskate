@@ -10,36 +10,69 @@
   float:left;
 }
 
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
 h4 {
   text-align: center;
   color: rgba(255, 255, 255, 0.856);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.242);
-  font-size: 5vw;
+  font-size: 8vw;
 }
 
 p {
   color: rgba(255, 255, 255, 0.25);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 30vw;
+  font-size: 25vh;
   text-align: left;
-  margin-top: -20%;
+  margin-top: -48%;
 
 }
 
-.card:nth-child(1) {
+.card:nth-child(1) .flip-card-inner .flip-card-front, .card:nth-child(1) .flip-card-inner .flip-card-back{
   background-image: linear-gradient(rgb(114, 174, 127), rgb(74, 192, 99));
 }
 
-.card:nth-child(2) {
+.card:nth-child(2) .flip-card-inner .flip-card-front, .card:nth-child(2) .flip-card-inner .flip-card-back{
   background-image: linear-gradient(rgb(183, 169, 89), rgb(222, 197, 58));
 }
 
-.card:nth-child(3) {
+.card:nth-child(3) .flip-card-inner .flip-card-front, .card:nth-child(3) .flip-card-inner .flip-card-back{
   background-image: linear-gradient(rgb(117, 168, 186), rgb(42, 180, 230));
 }
 
-.card:nth-child(4) {
+.card:nth-child(4) .flip-card-inner .flip-card-front, .card:nth-child(4) .flip-card-inner .flip-card-back{
   background-image: linear-gradient(rgb(177, 76, 103), rgb(218, 40, 88));
 }
 
@@ -59,3 +92,4 @@ p {
       z-index: 100;
     }
 } */
+
