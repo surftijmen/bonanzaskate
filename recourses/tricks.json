@@ -34,6 +34,41 @@
             "catagory" : "flip",
             "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
             "video" : ""
+        },
+        {
+            "name" : "fakie bigspin",
+            "points" : 1,
+            "catagory" : "flip",
+            "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
+            "video" : ""
+        },
+        {
+            "name" : "540 flip",
+            "points" : 4,
+            "catagory" : "flip",
+            "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
+            "video" : ""
+        },
+        {
+            "name" : "ollie",
+            "points" : 1,
+            "catagory" : "flip",
+            "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
+            "video" : ""
+        },
+        {
+            "name" : "fs 180",
+            "points" : 1,
+            "catagory" : "flip",
+            "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
+            "video" : ""
+        },
+        {
+            "name" : "varial heelflip",
+            "points" : 3,
+            "catagory" : "flip",
+            "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
+            "video" : ""
         }
     ]
 }
