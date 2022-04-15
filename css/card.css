@@ -1,16 +1,20 @@
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    width: 25vw;
+    box-shadow: 10px 4px 10px rgba(28, 28, 28, 0.5);
     display: block;
     border-radius: 10px;
-    height: 60vh;
+    height: 30vh;
     transition: transform 0.8s;
+    width: 60%;
+    position: relative;
     transform-style: preserve-3d;
-}
+    overflow: hidden;
+    margin: 2vh auto; 
+  }
   
 .container {
     padding: 2px 16px;
 }
+
 
 /* @media screen and (orientation:landscape) { 
     body::before {

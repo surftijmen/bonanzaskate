@@ -17,8 +17,8 @@ fetch("recourses/tricks.json")
         let h4 = document.getElementById("trick"+i);
         h4.innerText = trick.name;
 
-        let image = document.getElementById("image"+i);
-        image.src = trick.image;
+        // let image = document.getElementById("image"+i);
+        // image.src = trick.image;
 
         let color = "rgb(87, 148, 124)";
 
