@@ -1,4 +1,4 @@
-fetch("recourses/tricks.json")
+fetch("../recourses/tricks.json")
 .then(response => response.json())
 .then(data => {
 
