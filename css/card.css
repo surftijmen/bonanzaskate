@@ -1,6 +1,5 @@
 .card {
-  box-shadow: 10px 4px 10px rgba(28, 28, 28, 0.5);
-  border-radius: 16px;
+
   transition: transform 0.5s;
   height: 20vh;
   width: 80vw;
@@ -18,6 +17,7 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
+  border-radius: 16px;
 }
 
 /* Position the front and back side */
@@ -27,6 +27,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  border-radius: 16px;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -45,19 +46,19 @@
 
 h4 {
   text-align: center;
-  color: rgba(255, 255, 255, 0.856);
+  color: rgba(243, 243, 243, 0.896);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.242);
-  font-size: 8vw;
+  font-size: 42px;
 }
 
 p {
   color: rgba(255, 255, 255, 0.25);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 25vh;
+  font-size: 200px;
   text-align: left;
-  margin-top: -48%;
-
+  margin-top: -195px;
+  position: fixed;
 }
 
 .card:nth-child(1) .flip-card-inner .flip-card-front, .card:nth-child(1) .flip-card-inner .flip-card-back{
