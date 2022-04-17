@@ -1,5 +1,6 @@
-initializeCards = function() {
-    // get all the cards
+// initialize all cards
+function initializeCards(){
+    // retrieve all the cards from document
     let cards = document.getElementsByClassName("flip-card-inner");
     
     // store all card's rotations in an array
@@ -12,9 +13,14 @@ initializeCards = function() {
             rotation[i] = (rotation[i] + 180) % 360;
             cards[i].style.transition = 'transform 0.5s 0.0s'
             cards[i].style.transform = 'rotateY('+rotation[i]+'deg)'; 
-            for (let j = 0; j < cards.length; j++) {
+            
+            // flip other cards back, except last one
+            for (let j = 0; j < cards.length-1; j++) {
                 if (i!=j){
+                    // reset the rotation
                     rotation[j] = 0;
+
+                    // flip the cards back
                     cards[j].style.transition = 'transform 0.5s 0.2s'
                     cards[j].style.transform = 'rotateY('+0+'deg)'; 
                 }
@@ -22,14 +28,24 @@ initializeCards = function() {
         }
     }
 
-        // get score from cookie
+    // get score from cookie
     if (getCookie("score") != null) {
+        // retrieve data from cookies
         score += parseInt(getCookie("score"));
         life += parseInt(getCookie("life"));
+        
+        // check if the cookies contained correct data
+        if (isNaN(score)) {
+            // if score is NaN, reset data
+            score = 0;
+            life = 3;
+        }
+        // display data on screen
+        displayScore();
     } else {
+        // reset the game if cookies don't exist
         resetGame();
     }
-    setScore();
 }
 
 // create score and lifes
@@ -39,27 +55,44 @@ var life = 0;
 // initialize all cards
 initializeCards();
 
+// remove a life and check if game-over
 function decreaseLife() {
+    // decrease a life
     life = parseInt(life)-1;
+    
+    //update cookie
     setCookie("life", parseInt(life));
+    
+    // disable the life on the screen
     document.getElementsByClassName("life")[2-life].style.opacity = "0";
+    
+    // check if still alive
     if (life <= 0) {
+        // reset game if game-over
         resetGame();
+        
+        // end the game with a small delay
+        setTimeout(() => {
+            endGame();
+        }, 50);
     }
-    console.log(life);
 }
 
-// reset score
+// reset the game
 function resetGame() {
+    // reset scores
     life = 3;
     score = 0;
 
+    // reset cookies
     setCookie("life", 3);
     setCookie("score", 0);
-    
-    setScore();
 
-    lifes = document.getElementsByClassName("life");
+    // reset the display
+    displayScore();
+
+    // enable all lifes 
+    let lifes = document.getElementsByClassName("life");
     for (let i = 0; i < lifes.length; i++) {
         lifes[i].style.opacity = "0.75";
     }
@@ -67,12 +100,49 @@ function resetGame() {
 
 // increase score 
 function addScore(addition) {
+
+    // increase the score and update the cookie
     score += parseInt(addition)*100;
     setCookie("score", parseInt(score));
-    setScore();
+
+    // display score to screen 
+    displayScore();
+
+    // generate new tricks
     generateNewTricks();
+
+    // flip all cards back
+    flipCardsBack();
 }
 
-function setScore() {
+// show the score to the screen
+function displayScore() {
     document.getElementById("score").innerText = "Score: " + score + " pt";
+}
+
+// end the game
+function endGame() {
+    // retrieve the last card
+    let card = document.getElementsByClassName("flip-card-inner")[4];
+    
+    // flip the last card
+    card.style.transition = 'transform 0.5s 0.2s'
+    card.style.transform = 'rotateY('+180+'deg)'; 
+}
+
+// flip all the cards back
+function flipCardsBack() {
+    // retrieve all cards
+    let cards = document.getElementsByClassName("flip-card-inner");
+    
+    // flip all cards back
+    for (let j = 0; j < cards.length; j++) {
+        cards[j].style.transition = 'transform 0.5s 0.2s'
+        cards[j].style.transform = 'rotateY('+0+'deg)';         
+    }
+}
+
+// return to the main menu 
+function returnToMenu() {
+    window.location.href = "main.html";
 }

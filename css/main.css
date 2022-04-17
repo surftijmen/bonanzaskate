@@ -17,3 +17,14 @@
     display: inline-block;
     font-size: 30px;
 }
+
+.restartButton {
+    background-color: #19aeb0; /* Green */
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    z-index: 40;
+}
