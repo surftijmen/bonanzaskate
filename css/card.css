@@ -53,11 +53,12 @@ h4 {
 }
 
 p {
-  color: rgba(255, 255, 255, 0.25);
+  color: rgba(0, 0, 0, 0.203);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 110px;
+  font-size: 32px;
   text-align: left;
-  margin-top: -132px;
+  margin-top: -60px;
+  margin-left: 5px;
   position: fixed;
 
 }

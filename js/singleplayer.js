@@ -40,6 +40,17 @@ function initializeCards(){
             score = 0;
             life = 3;
         }
+
+        // don't display first life if lifes < 3
+        if (life < 3){
+            document.getElementsByClassName("life")[0].style.opacity = "0";
+        }
+
+        // don't display second life if lifes < 2
+        if (life < 2){
+            document.getElementsByClassName("life")[1].style.opacity = "0";
+        }
+
         // display data on screen
         displayScore();
     } else {
@@ -146,3 +157,5 @@ function flipCardsBack() {
 function returnToMenu() {
     window.location.href = "main.html";
 }
+
+//TODO remove lifes after reloading visually
