@@ -28,7 +28,7 @@ setTricks = function(allTricks) {
     for (let i = 0; i < 4; i++) {
         trick = allTricks[i];
         
-        document.getElementById("points"+i).innerText = trick.points;
+        document.getElementById("points"+i).innerText = trick.points + "";
         
         let h4 = document.getElementById("trick"+i);
         h4.innerText = trick.name;

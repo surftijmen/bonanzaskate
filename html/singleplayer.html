@@ -18,7 +18,8 @@
                 </div>
             </div>
             <div class="flip-card-back">
-                <h1>Test</h1>
+                <button class="addButton" onclick="addScore(1)">Done!</button>
+                <button class="failButton" onclick="decreaseLife()">Failed</button>
             </div>
         </div>
     </div>
@@ -31,7 +32,8 @@
                 </div>
             </div>
             <div class="flip-card-back">
-                <h1>Test</h1>
+                <button class="addButton" onclick="addScore(2)">Done!</button>
+                <button class="failButton" onclick="decreaseLife()">Failed</button>
             </div>
         </div>
     </div>
@@ -44,7 +46,8 @@
                 </div>
             </div>
             <div class="flip-card-back">
-                <h1>Test</h1>
+                <button class="addButton" onclick="addScore(3)">Done!</button>
+                <button class="failButton" onclick="decreaseLife()">Failed</button>
             </div>
         </div>
     </div>
@@ -57,7 +60,25 @@
                 </div>
             </div>
             <div class="flip-card-back">
-                <h1>Test</h1>
+                <button class="addButton" onclick="addScore(4)">Done!</button>
+                <button class="failButton" onclick="decreaseLife()">Failed</button>
+            </div>
+        </div>
+    </div>
+    <div class="card" style="height: 25vh;">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <div class="container" id="card4">
+                    <h4 id="score">Score: 0 pt</h4>
+                    <input class="life" type="image" src="../recourses/logo.png" alt="" style="height: 65px; margin-top: -50px; opacity: 75%;">
+                    <input class="life" type="image" src="../recourses/logo.png" alt="" style="height: 65px; margin-top: -50px; opacity: 75%;">
+                    <input class="life" type="image" src="../recourses/logo.png" alt="" style="height: 65px; margin-top: -50px; opacity: 75%;">
+                    <p id="points4"></p> 
+                </div>
+            </div>
+            <div class="flip-card-back">
+                <button onclick="resetGame()">Restart?</button>
+                <h4>Home</h4>
             </div>
         </div>
     </div>

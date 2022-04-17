@@ -8,7 +8,7 @@
             "video" : ""
         },
         {
-            "name" : "720 flip",
+            "name" : "fakie bigflip",
             "points" : 4,
             "catagory" : "flip",
             "image" : "https://i.ytimg.com/vi/vBl7S8kyjbs/maxresdefault.jpg",
@@ -64,8 +64,50 @@
             "video" : ""
         },
         {
-            "name" : "varial heelflip",
+            "name" : "varial kickflip",
             "points" : 3,
+            "catagory" : "flip",
+            "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
+            "video" : ""
+        },
+        {
+            "name" : "toeflip",
+            "points" : 3,
+            "catagory" : "flip",
+            "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
+            "video" : ""
+        },
+        {
+            "name" : "hardflip",
+            "points" : 4,
+            "catagory" : "flip",
+            "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
+            "video" : ""
+        },
+        {
+            "name" : "nightmare flip",
+            "points" : 4,
+            "catagory" : "flip",
+            "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
+            "video" : ""
+        },
+        {
+            "name" : "bs pop shovit",
+            "points" : 2,
+            "catagory" : "flip",
+            "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
+            "video" : ""
+        }, 
+        {
+            "name" : "nollie",
+            "points" : 1,
+            "catagory" : "flip",
+            "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
+            "video" : ""
+        },
+        {
+            "name" : "bs shovit revert",
+            "points" : 2,
             "catagory" : "flip",
             "image" : "https://www.skatedeluxe.com/blog/wp-content/uploads/2016/09/skateboard-trick-tip-360-shove-it-4.jpg",
             "video" : ""

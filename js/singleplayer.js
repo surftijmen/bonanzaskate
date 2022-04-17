@@ -21,6 +21,58 @@ initializeCards = function() {
             }
         }
     }
+
+        // get score from cookie
+    if (getCookie("score") != null) {
+        score += parseInt(getCookie("score"));
+        life += parseInt(getCookie("life"));
+    } else {
+        resetGame();
+    }
+    setScore();
 }
 
+// create score and lifes
+var score = 0;
+var life = 0;
+
+// initialize all cards
 initializeCards();
+
+function decreaseLife() {
+    life = parseInt(life)-1;
+    setCookie("life", parseInt(life));
+    document.getElementsByClassName("life")[2-life].style.opacity = "0";
+    if (life <= 0) {
+        resetGame();
+    }
+    console.log(life);
+}
+
+// reset score
+function resetGame() {
+    life = 3;
+    score = 0;
+
+    setCookie("life", 3);
+    setCookie("score", 0);
+    
+    setScore();
+
+    lifes = document.getElementsByClassName("life");
+    for (let i = 0; i < lifes.length; i++) {
+        lifes[i].style.opacity = "0.75";
+    }
+}
+
+// increase score 
+function addScore(addition) {
+    score += parseInt(addition)*100;
+    setCookie("score", parseInt(score));
+    setScore();
+    generateNewTricks();
+}
+
+function setScore() {
+    document.getElementById("score").innerText = "Score: " + score + " pt";
+}

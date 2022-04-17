@@ -1,11 +1,10 @@
 .card {
-
   transition: transform 0.5s;
-  height: 20vh;
+  height: 12vh;
   width: 80vw;
   position: relative;
   overflow: hidden;
-  margin: 2vh 8vw;
+  margin: 1.5vh 8vw;
   float:left;
 }
 
@@ -48,33 +47,39 @@ h4 {
   text-align: center;
   color: rgba(243, 243, 243, 0.896);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-shadow: 4px 5px 5px rgba(0, 0, 0, 0.242);
-  font-size: 42px;
+  text-shadow: 3px 4px 4px rgba(0, 0, 0, 0.242);
+  margin-top: 20px;
+  font-size: 36px;
 }
 
 p {
   color: rgba(255, 255, 255, 0.25);
   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 200px;
+  font-size: 110px;
   text-align: left;
-  margin-top: -195px;
+  margin-top: -132px;
   position: fixed;
+
 }
 
 .card:nth-child(1) .flip-card-inner .flip-card-front, .card:nth-child(1) .flip-card-inner .flip-card-back{
-  background-image: linear-gradient(rgb(114, 174, 127), rgb(74, 192, 99));
+  background-image: linear-gradient(rgb(168, 131, 92), rgb(206, 136, 49));
 }
 
 .card:nth-child(2) .flip-card-inner .flip-card-front, .card:nth-child(2) .flip-card-inner .flip-card-back{
-  background-image: linear-gradient(rgb(183, 169, 89), rgb(222, 197, 58));
+  background-image: linear-gradient(rgb(86, 124, 137), rgb(91, 183, 216));
 }
 
 .card:nth-child(3) .flip-card-inner .flip-card-front, .card:nth-child(3) .flip-card-inner .flip-card-back{
-  background-image: linear-gradient(rgb(117, 168, 186), rgb(42, 180, 230));
+  background-image: linear-gradient(rgb(155, 146, 102),rgb(215, 197, 97));
 }
 
 .card:nth-child(4) .flip-card-inner .flip-card-front, .card:nth-child(4) .flip-card-inner .flip-card-back{
-  background-image: linear-gradient(rgb(177, 76, 103), rgb(218, 40, 88));
+  background-image: linear-gradient(rgb(150, 91, 106), rgb(214, 69, 108));
+}
+
+.card:nth-child(5) .flip-card-inner .flip-card-front, .card:nth-child(5) .flip-card-inner .flip-card-back{
+  background-image: linear-gradient(rgb(118, 118, 118),rgb(121, 121, 121));
 }
 
 /* @media screen and (orientation:landscape) { 
