@@ -1,0 +1,39 @@
+.card {
+    position: relative;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border-radius: 16px;
+    height: 12vh;
+    overflow: hidden;
+    margin: 1.5vh 8vw;
+    background-image: linear-gradient(rgb(92, 174, 241), rgb(20, 130, 173));
+}
+
+.card:nth-child(1){
+    background-image: linear-gradient(rgb(171, 220, 157), rgb(108, 180, 121));
+}
+ 
+h1 {
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    text-align: center;
+    color: white;   
+}
+
+h2 {
+    margin-top: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 80px;
+    text-align: center;
+    color: white;
+}
+
+button {
+    height: 4vh;
+    width: 40vw;
+    border-radius: 4px;
+    margin: 1px;
+    background-color: rgb(255, 229, 79);
+}
