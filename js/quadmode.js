@@ -47,7 +47,7 @@ function initialize() {
 
                 allTricks.pop(cards[i].children[0].innerHTML);
                 currentTrick = cards[i].children[0].innerHTML;
-                
+
                 cards[0].children[0].innerHTML = currentTrick;
                 cards[1].children[0].innerHTML = "Regular";
                 cards[2].children[0].innerHTML = "Switch";

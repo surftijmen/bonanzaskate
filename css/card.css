@@ -16,7 +16,7 @@
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 /* Position the front and back side */
@@ -26,7 +26,7 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  border-radius: 16px;
+  border-radius: 8px;
 }
 
 /* Style the front side (fallback if image is missing) */
