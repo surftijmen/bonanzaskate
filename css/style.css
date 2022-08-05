@@ -4,7 +4,7 @@ body {
 }
 
 .screen {
-    background-image: radial-gradient(rgba(70, 70, 70, 0.341), rgba(44, 44, 44, 0.45));
+    background-image: radial-gradient(rgba(40, 40, 45, 0.341), rgba(30, 29, 35, 0.45));
     height: 100vh;
     width: 100vw;
     position: fixed;

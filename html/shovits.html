@@ -4,32 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/quadmode.css">
+    <link rel="stylesheet" href="../css/shovits.css">
     <title>Document</title>
 </head>
 <body>
-    <div class="card" style="height: 30vh;">
-        <h1 id="trick" style="font-size: 30px;">Choose a trick!</h1>
-        <h1 id="score">Score: 0</h1>
-        <img id="health" src="../recourses/logo.png" height="100px;" style="float: left; margin-left: 10px;">
-        <button onclick="restartGame()">Restart game</button>
-        <button onclick="saveAndQuit()">Save and quit</button>
-        <button onclick="finishRound()">Finish round</button>
-
-
-    </div>
-    <div class="card">
-        <h2 id="card0">Loading...</h2>
-    </div>
-    <div class="card">
-        <h2 id="card1">Loading...</h2>
-    </div>
-    <div class="card">
-        <h2 id="card2">Loading...</h2>
-    </div>
-    <div class="card">
-        <h2 id="card3">Loading...</h2>
-    </div>
-    <script src="../js/shovits.js"></script>
+    <div class="container">
+        <div class="card">
+          <div class="box">
+            <div class="content">
+              <h2 id="score">00</h2>
+              <h3 id ="card">Loading...</h3>
+              <p>Try to land the trick above! Done? Press the button to get the next trick! If it is too difficult you can restart.</p>
+              <button onclick="newTrick()">Done!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+<script src="../js/shovits.js"></script>
 </body>
 </html>

@@ -1,9 +1,12 @@
+// initialize all variables
 let allTricks;
 let extra = ["switch ", "fakie ", "nollie ", "regular "];
 let direction = ["fs ", "bs "];
 let allCombinations = [];
 let amountOfJokers = 3;
-
+let score = 0;
+let trick;
+let mayClick = false;
 
 // get all shovits from file
 const getAllTricks = function() {
@@ -25,8 +28,6 @@ function generateAllCombinations() {
         });
     });
 
-    console.log(allCombinations.length);
-
     // add jokers
     for (let i = 0; i < amountOfJokers; i++) {allCombinations.push("joker")}
 }
@@ -34,12 +35,8 @@ function generateAllCombinations() {
 
 // get 4 shovits 
 function generateShovit() {
-    for (let i = 0; i < 4; i++) {
-        let trick = allCombinations[Math.floor(Math.random() * allCombinations.length)];
-        console.log(allCombinations.length);
-        document.getElementById("card"+i).innerText = trick;
-        document.getElementById("card"+i).style.fontSize = '30px';
-    }
+    trick = allCombinations[Math.floor(Math.random() * allCombinations.length)];
+    document.getElementById("card").innerText = trick;
 }
 
 // initialize the code
@@ -48,7 +45,34 @@ function initialize() {
     setTimeout(() => {
         generateAllCombinations();
         generateShovit();
+        mayClick = true;
     }, 1000);
+}
+
+// this function is called if you press the 'done!' button to get a new trick
+function newTrick() {
+    if (mayClick){
+        document.getElementsByClassName('card')[0].style.animation="rotate 0.4s linear 1";
+        mayClick = false;
+        if (trick != "joker"){score++;}
+        if (allCombinations.length >1) {
+            
+            setTimeout(() => {
+                if (score < 10) document.getElementById("score").innerText = "0" + score;
+                if (score >= 10) document.getElementById("score").innerText = score;
+                allCombinations.pop(trick);
+                generateShovit();
+                setTimeout(() => {
+                    mayClick = true;
+                    document.getElementsByClassName('card')[0].style.animation="";
+                }, 300);
+            }, 100);
+
+
+        }else{
+            document.getElementById("card").innerText = "Well done! You finished!";
+        }
+    }
 }
 
 initialize();
